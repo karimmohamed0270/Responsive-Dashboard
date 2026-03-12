@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_svg/flutter_svg.dart';
+import 'package:responesive_dashboard/utils/app_style.dart';
 
 class UserInfoListtile extends StatelessWidget {
   const UserInfoListtile({
@@ -15,10 +16,13 @@ class UserInfoListtile extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return ListTile(
-      leading: SvgPicture.asset(imagePath),
-      title: Text(title),
-      subtitle: Text(subtitle),
+    return Card(
+      color: const Color.fromARGB(255, 248, 238, 238),
+      child: ListTile(
+        leading: SvgPicture.asset(imagePath),
+        title: Text(title, style: AppStyles.styleSemiBold16),
+        subtitle: Text(subtitle, style: AppStyles.styleRegular12),
+      ),
     );
   }
 }
