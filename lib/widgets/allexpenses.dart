@@ -1,5 +1,8 @@
 import 'package:flutter/material.dart';
+import 'package:responesive_dashboard/models/allexpenses_item.dart';
+import 'package:responesive_dashboard/utils/appImages.dart';
 import 'package:responesive_dashboard/widgets/allexpensesheader.dart';
+import 'package:responesive_dashboard/widgets/allexpensesitem.dart';
 
 class Allexpenses extends StatelessWidget {
   const Allexpenses({super.key});
@@ -19,6 +22,18 @@ class Allexpenses extends StatelessWidget {
           children: [
             // 1
             Allexpensesheader(),
+
+            SizedBox(height: 20),
+
+            //  items
+            Allexpensesitem(
+              item: AllexpensesItemModel(
+                title: "Balance",
+                image: Assets.imagesBalance,
+                date: "March 2026",
+                price: "2000\$",
+              ),
+            ),
           ],
         ),
       ),
