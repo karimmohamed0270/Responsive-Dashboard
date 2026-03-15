@@ -24,21 +24,25 @@ class Allexpensesheader extends StatelessWidget {
 
             // 2 button
             Container(
+              height: 32,
               decoration: ShapeDecoration(
                 shape: RoundedRectangleBorder(
-                  borderRadius: BorderRadius.circular(8),
-                  side: const BorderSide(color: Colors.grey, width: 1),
+                  borderRadius: BorderRadius.circular(4),
+                  side: const BorderSide(
+                    color: Color.fromARGB(255, 235, 229, 229),
+                    width: 1,
+                  ),
                 ),
               ),
               child: Row(
                 children: const [
+                  Text("Monthly", style: AppStyles.styleRegular14),
+                  SizedBox(width: 12),
                   Icon(
                     Icons.arrow_circle_up_sharp,
                     size: 16,
-                    color: Colors.grey,
+                    color: Colors.black,
                   ),
-                  SizedBox(width: 4),
-                  Text("Monthly", style: AppStyles.styleRegular14),
                 ],
               ),
             ),
