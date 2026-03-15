@@ -82,9 +82,11 @@ class _AllexpensesitemsbuilderState extends State<Allexpensesitemsbuilder> {
         (index) => Expanded(
           child: Allexpensesitem(
             item: items[index],
+            // pass the isSelected property to the item builder based on the selected index
             isSelected: selectedIndex == index,
             onTap: () {
               setState(() {
+                // update the selected index when an item is tapped
                 selectedIndex = index;
               });
             },

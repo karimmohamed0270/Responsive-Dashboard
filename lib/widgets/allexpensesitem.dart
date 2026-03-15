@@ -90,8 +90,10 @@ class Allexpensesitem extends StatelessWidget {
               children: [
                 Padding(
                   padding: const EdgeInsets.all(8.0),
+                  // 1 header logo + icon with dynamic color based on selection
                   child: Allexpensesitemheader(
                     item: item,
+                    // pass the isSelected property to the  allexpensesitemheader to change the logo color
                     isSelected: isSelected,
                   ),
                 ),
