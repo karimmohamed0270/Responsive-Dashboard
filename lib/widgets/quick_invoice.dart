@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:responesive_dashboard/widgets/quick_invoice_header.dart';
+import 'package:responesive_dashboard/widgets/quickinvoice_last_transaction.dart';
 
 class QuickInvoice extends StatelessWidget {
   const QuickInvoice({super.key});
@@ -19,6 +20,10 @@ class QuickInvoice extends StatelessWidget {
           children: [
             // header
             QuickInvoiceHeader(),
+
+            SizedBox(height: 20),
+            //  last transaction section
+            LastTransaction(),
           ],
         ),
       ),

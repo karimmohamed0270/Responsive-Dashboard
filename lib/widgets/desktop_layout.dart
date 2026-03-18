@@ -16,8 +16,10 @@ class DesktopLayout extends StatelessWidget {
         Expanded(
           child: Column(
             children: [
-              Expanded(child: Allexpenses()),
-              Expanded(child: QuickInvoice()),
+              // Expanded(child: Allexpenses()),
+              // Expanded(child: QuickInvoice()),
+              Allexpenses(),
+              QuickInvoice(),
             ],
           ),
         ),
