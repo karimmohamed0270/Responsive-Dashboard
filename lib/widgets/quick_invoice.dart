@@ -8,7 +8,7 @@ class QuickInvoice extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Padding(
-      padding: const EdgeInsets.all(20.0),
+      padding: const EdgeInsets.only(top: 20.0, left: 20, right: 20),
       child: Container(
         decoration: ShapeDecoration(
           color: Colors.white,

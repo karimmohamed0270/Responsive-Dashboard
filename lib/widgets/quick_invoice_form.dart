@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:responesive_dashboard/widgets/custom_btn.dart';
 import 'package:responesive_dashboard/widgets/titletextfield.dart';
 
 //  that contain all textfields of quick invoice form and the button of submit invoice
@@ -47,6 +48,31 @@ class QuickInvoiceForm extends StatelessWidget {
             ),
           ],
         ),
+
+        SizedBox(height: 10),
+
+        // submit button row 3
+        Row(
+          children: [
+            Expanded(
+              child: CustomBtn(
+                data: "Send Money",
+                textcolor: Colors.white,
+                btncolor: Colors.blue,
+              ),
+            ),
+            SizedBox(width: 20),
+            Expanded(
+              child: CustomBtn(
+                data: "Send Money",
+                textcolor: Colors.lightBlue,
+                btncolor: Colors.white,
+              ),
+            ),
+          ],
+        ),
+
+        // SizedBox(height: 8),
       ],
     );
   }
