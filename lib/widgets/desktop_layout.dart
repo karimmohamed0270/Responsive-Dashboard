@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:responesive_dashboard/widgets/allexpenses.dart';
 import 'package:responesive_dashboard/widgets/custom_drawer.dart';
+import 'package:responesive_dashboard/widgets/my_card.dart';
 import 'package:responesive_dashboard/widgets/quick_invoice.dart';
 
 class DesktopLayout extends StatelessWidget {
@@ -23,6 +24,9 @@ class DesktopLayout extends StatelessWidget {
             ],
           ),
         ),
+
+        // 3 right side content
+        Expanded(child: MyCard()),
       ],
     );
   }
