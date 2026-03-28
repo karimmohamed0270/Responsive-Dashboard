@@ -6,6 +6,8 @@ import 'package:responesive_dashboard/widgets/my_card_dotsindicator.dart';
 import 'package:responesive_dashboard/widgets/my_card_page_view.dart';
 import 'package:responesive_dashboard/widgets/mycard_section.dart';
 import 'package:responesive_dashboard/widgets/quick_invoice.dart';
+import 'package:responesive_dashboard/widgets/transaction_history_section.dart';
+import 'package:responesive_dashboard/widgets/transactionitem_builder.dart';
 
 class DesktopLayout extends StatelessWidget {
   const DesktopLayout({super.key});
@@ -29,7 +31,8 @@ class DesktopLayout extends StatelessWidget {
         ),
 
         // 3 right side content
-        Expanded(child: MycardSection()),
+        // Expanded(child: MycardSection()),
+        Expanded(child: TransactionHistorySection()),
       ],
     );
   }
