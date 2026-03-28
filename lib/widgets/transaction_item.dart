@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:responesive_dashboard/models/transaction_item.dart';
+import 'package:responesive_dashboard/utils/app_style.dart';
 
 class TransactionItem extends StatelessWidget {
   const TransactionItem({super.key, required this.transaction});
@@ -8,18 +9,29 @@ class TransactionItem extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return Container(
-      decoration: ShapeDecoration(
-        shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(12)),
-        color: const Color.fromARGB(255, 226, 226, 226),
-      ),
-      child: ListTile(
-        title: Text(transaction.title),
-        subtitle: Text(transaction.data),
-        trailing: Text(
-          transaction.amount,
-          style: TextStyle(
-            color: transaction.isIncome ? Colors.blue : Colors.red,
+    return Padding(
+      padding: const EdgeInsets.all(8),
+      child: Container(
+        decoration: ShapeDecoration(
+          shape: RoundedRectangleBorder(
+            borderRadius: BorderRadius.circular(12),
+          ),
+          color: const Color.fromARGB(255, 226, 226, 226),
+        ),
+        child: ListTile(
+          title: Text(
+            transaction.title,
+            style: AppStyles.styleBold16.copyWith(color: Colors.black),
+          ),
+          subtitle: Text(
+            transaction.data,
+            style: AppStyles.styleSemiBold18.copyWith(color: Colors.grey),
+          ),
+          trailing: Text(
+            transaction.amount,
+            style: AppStyles.styleBold16.copyWith(
+              color: transaction.isIncome ? Colors.blue : Colors.red,
+            ),
           ),
         ),
       ),

@@ -11,9 +11,12 @@ class MycardSection extends StatelessWidget {
     return Column(
       crossAxisAlignment: CrossAxisAlignment.start,
       children: [
-        Text(
-          "My Cards",
-          style: AppStyles.styleBold16.copyWith(color: Colors.black),
+        Padding(
+          padding: const EdgeInsets.only(left: 8.0, right: 8.0, top: 8.0),
+          child: Text(
+            "My Cards",
+            style: AppStyles.styleBold16.copyWith(color: Colors.black),
+          ),
         ),
         SizedBox(height: 10),
         MyCardPageView(),
