@@ -1,6 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:responesive_dashboard/widgets/allexpenses.dart';
 import 'package:responesive_dashboard/widgets/custom_drawer.dart';
+import 'package:responesive_dashboard/widgets/income_chart.dart';
+import 'package:responesive_dashboard/widgets/income_section.dart';
 import 'package:responesive_dashboard/widgets/my_card_and_transaction_section.dart';
 import 'package:responesive_dashboard/widgets/my_card_dots.dart';
 import 'package:responesive_dashboard/widgets/my_card_dotsindicator.dart';
@@ -34,7 +36,7 @@ class DesktopLayout extends StatelessWidget {
 
         // 3 right side content
         // Expanded(child: MycardSection()),
-        Expanded(child: MyCardAndTransactionSection()),
+        Expanded(child: IncomeSection()),
       ],
     );
   }
