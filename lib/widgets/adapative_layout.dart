@@ -18,7 +18,8 @@ class AdapativeLayout extends StatelessWidget {
       builder: (context, constraints) {
         if (constraints.maxWidth < 600) {
           return mobileBody(context);
-        } else if (constraints.maxWidth < 900) {
+          // 900 is the breakpoint for tablets but is not a fixed rule
+        } else if (constraints.maxWidth < 1200) {
           return tabletBody(context);
         } else {
           return desktopBody(context);

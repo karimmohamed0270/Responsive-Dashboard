@@ -1,16 +1,9 @@
 import 'package:flutter/material.dart';
 import 'package:responesive_dashboard/widgets/allexpenses.dart';
 import 'package:responesive_dashboard/widgets/custom_drawer.dart';
-import 'package:responesive_dashboard/widgets/income_chart.dart';
 import 'package:responesive_dashboard/widgets/income_section.dart';
 import 'package:responesive_dashboard/widgets/my_card_and_transaction_section.dart';
-import 'package:responesive_dashboard/widgets/my_card_dots.dart';
-import 'package:responesive_dashboard/widgets/my_card_dotsindicator.dart';
-import 'package:responesive_dashboard/widgets/my_card_page_view.dart';
-import 'package:responesive_dashboard/widgets/mycard_section.dart';
 import 'package:responesive_dashboard/widgets/quick_invoice.dart';
-import 'package:responesive_dashboard/widgets/transaction_history_section.dart';
-import 'package:responesive_dashboard/widgets/transactionitem_builder.dart';
 
 class DesktopLayout extends StatelessWidget {
   const DesktopLayout({super.key});
@@ -23,7 +16,7 @@ class DesktopLayout extends StatelessWidget {
         Expanded(child: CustomDrawer()),
         // 2 main content
         Expanded(
-          // flex: 2,
+          flex: 3,
           child: Column(
             children: [
               // Expanded(child: Allexpenses()),
@@ -38,6 +31,7 @@ class DesktopLayout extends StatelessWidget {
         // Expanded(child: MycardSection()),
         // Expanded(child: IncomeSection()),
         Expanded(
+          flex: 2,
           child: Column(
             children: [
               MyCardAndTransactionSection(),
