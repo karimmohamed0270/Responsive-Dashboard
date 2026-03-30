@@ -12,7 +12,7 @@ class MycardSection extends StatelessWidget {
       crossAxisAlignment: CrossAxisAlignment.start,
       children: [
         Padding(
-          padding: const EdgeInsets.only(left: 8.0, right: 8.0, top: 8.0),
+          padding: const EdgeInsets.only(left: 20.0, right: 20.0, top: 8.0),
           child: Text(
             "My Cards",
             style: AppStyles.styleBold16.copyWith(color: Colors.black),

@@ -21,6 +21,8 @@ class IncomeDetails extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return ListView.builder(
+      shrinkWrap: true,
+      physics: NeverScrollableScrollPhysics(),
       itemCount: getIncomeDetails().length,
       itemBuilder: (context, index) {
         return IncomeDetailsItem(incomeDetailsModel: getIncomeDetails()[index]);
