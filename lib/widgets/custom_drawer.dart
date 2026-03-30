@@ -19,6 +19,8 @@ class CustomDrawer extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Container(
+      // take 80% of the screen width and the full height of the screen in mobile
+      // but when i use it and make it expended the width not consider
       width: MediaQuery.sizeOf(context).width * 0.7, // 80% of the screen width
       color: const Color.fromARGB(255, 255, 247, 247),
       child: CustomScrollView(

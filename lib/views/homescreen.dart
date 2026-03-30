@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:responesive_dashboard/utils/app_style.dart';
 import 'package:responesive_dashboard/widgets/adapative_layout.dart';
 import 'package:responesive_dashboard/widgets/custom_drawer.dart';
 import 'package:responesive_dashboard/widgets/desktop_layout.dart';
@@ -26,11 +27,16 @@ class _HomescreenState extends State<Homescreen> {
       appBar: MediaQuery.sizeOf(context).width < 800
           ? AppBar(
               backgroundColor: Colors.blue,
+              title: Text(
+                'Dashboard',
+                style: AppStyles.styleBold16.copyWith(color: Colors.white),
+              ),
+              centerTitle: true,
               leading: IconButton(
                 onPressed: () {
                   scaffoldKey.currentState!.openDrawer();
                 },
-                icon: Icon(Icons.menu),
+                icon: Icon(Icons.menu, color: Colors.white),
               ),
             )
           : null,
