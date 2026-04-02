@@ -18,18 +18,29 @@ class IncomeSection extends StatelessWidget {
         child: Column(
           children: [
             IncomeSectionHeader(),
-            Expanded(
-              child: Row(
-                crossAxisAlignment: CrossAxisAlignment.start,
-                children: [
-                  Expanded(child: IncomeChart()),
-                  Expanded(child: IncomeDetails()),
-                ],
-              ),
-            ),
+
+            Expanded(child: InomeSectionBody()),
           ],
         ),
       ),
     );
+  }
+}
+
+class InomeSectionBody extends StatelessWidget {
+  const InomeSectionBody({super.key});
+
+  @override
+  Widget build(BuildContext context) {
+    double width = MediaQuery.sizeOf(context).width;
+    return width >= 1565
+        ? Row(
+            crossAxisAlignment: CrossAxisAlignment.start,
+            children: [
+              Expanded(child: IncomeChart()),
+              Expanded(child: IncomeDetails()),
+            ],
+          )
+        : SizedBox();
   }
 }

@@ -18,11 +18,11 @@ class MycardSection extends StatelessWidget {
             style: AppStyles.styleBold16.copyWith(color: Colors.black),
           ),
         ),
-        SizedBox(height: 10),
+        SizedBox(height: 5),
         MyCardPageView(),
-        SizedBox(height: 20),
+        SizedBox(height: 10),
         MyCardDotsindicator(),
-        SizedBox(height: 20),
+        SizedBox(height: 5),
       ],
     );
   }

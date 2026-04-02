@@ -1,3 +1,5 @@
+import 'dart:math';
+
 import 'package:flutter/material.dart';
 import 'package:responesive_dashboard/models/incomeDetails.dart';
 import 'package:responesive_dashboard/utils/app_style.dart';
@@ -5,8 +7,10 @@ import 'package:responesive_dashboard/utils/app_style.dart';
 class IncomeDetailsItem extends StatelessWidget {
   const IncomeDetailsItem({super.key, required this.incomeDetailsModel});
   final IncomeDetailsModel incomeDetailsModel;
+
   @override
   Widget build(BuildContext context) {
+    // print(MediaQuery.sizeOf(context).width.toString());
     return ListTile(
       leading: Container(
         width: 10,
@@ -17,7 +21,7 @@ class IncomeDetailsItem extends StatelessWidget {
         ),
       ),
       title: Text(incomeDetailsModel.title, style: AppStyles.styleSemiBold16),
-      subtitle: Text(
+      trailing: Text(
         '\$${incomeDetailsModel.amount.toStringAsFixed(2)}',
         style: AppStyles.styleSemiBold16,
       ),

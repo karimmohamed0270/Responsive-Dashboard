@@ -14,29 +14,45 @@ class DesktopLayout extends StatelessWidget {
       children: [
         // 1 drawer
         Expanded(child: CustomDrawer()),
-        // 2 main content
-        Expanded(
-          flex: 3,
-          child: Column(
-            children: [
-              // Expanded(child: Allexpenses()),
-              // Expanded(child: QuickInvoice()),
-              Allexpenses(),
-              QuickInvoice(),
-            ],
-          ),
-        ),
 
-        // 3 right side content
-        // Expanded(child: MycardSection()),
-        // Expanded(child: IncomeSection()),
+        //  2 main content and 3 right side content to scrool them together  to make desktop layout more user friendly and to make the content more accessible for the user
         Expanded(
-          flex: 2,
-          child: Column(
-            children: [
-              MyCardAndTransactionSection(),
-              SizedBox(height: 5),
-              Expanded(child: IncomeSection()),
+          flex: 4,
+          child: CustomScrollView(
+            slivers: [
+              SliverFillRemaining(
+                hasScrollBody: false,
+                child: Row(
+                  children: [
+                    // 2 main content
+                    Expanded(
+                      flex: 3,
+                      child: Column(
+                        children: [
+                          // Expanded(child: Allexpenses()),
+                          // Expanded(child: QuickInvoice()),
+                          Allexpenses(),
+                          QuickInvoice(),
+                        ],
+                      ),
+                    ),
+
+                    // 3 right side content
+                    // Expanded(child: MycardSection()),
+                    // Expanded(child: IncomeSection()),
+                    Expanded(
+                      flex: 2,
+                      child: Column(
+                        children: [
+                          MyCardAndTransactionSection(),
+                          SizedBox(height: 5),
+                          Expanded(child: IncomeSection()),
+                        ],
+                      ),
+                    ),
+                  ],
+                ),
+              ),
             ],
           ),
         ),
