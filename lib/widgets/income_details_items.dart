@@ -20,10 +20,13 @@ class IncomeDetailsItem extends StatelessWidget {
           shape: BoxShape.circle,
         ),
       ),
-      title: Text(incomeDetailsModel.title, style: AppStyles.styleSemiBold16),
+      title: Text(
+        incomeDetailsModel.title,
+        style: AppStyles.styleRegular12.copyWith(color: Colors.black),
+      ),
       trailing: Text(
         '\$${incomeDetailsModel.amount.toStringAsFixed(2)}',
-        style: AppStyles.styleSemiBold16,
+        style: AppStyles.styleRegular14.copyWith(color: Colors.black),
       ),
     );
   }
