@@ -23,7 +23,7 @@ class CustomBtn extends StatelessWidget {
 
       child: Text(
         data,
-        style: AppStyles.styleBold16.copyWith(color: textcolor),
+        style: AppStyles.styleBold16(context).copyWith(color: textcolor),
       ),
     );
   }

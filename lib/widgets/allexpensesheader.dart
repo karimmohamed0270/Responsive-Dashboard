@@ -18,7 +18,7 @@ class Allexpensesheader extends StatelessWidget {
         child: Row(
           children: [
             // 1
-            Text("All Expenses", style: AppStyles.styleSemiBold20),
+            Text("All Expenses", style: AppStyles.styleSemiBold20(context)),
 
             Expanded(child: SizedBox()),
 
@@ -35,8 +35,8 @@ class Allexpensesheader extends StatelessWidget {
                 ),
               ),
               child: Row(
-                children: const [
-                  Text("Monthly", style: AppStyles.styleRegular14),
+                children: [
+                  Text("Monthly", style: AppStyles.styleRegular14(context)),
                   SizedBox(width: 12),
                   Icon(
                     Icons.arrow_circle_up_sharp,

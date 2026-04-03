@@ -29,7 +29,9 @@ class _HomescreenState extends State<Homescreen> {
               backgroundColor: Colors.blue,
               title: Text(
                 'Dashboard',
-                style: AppStyles.styleBold16.copyWith(color: Colors.white),
+                style: AppStyles.styleBold16(
+                  context,
+                ).copyWith(color: Colors.white),
               ),
               centerTitle: true,
               leading: IconButton(

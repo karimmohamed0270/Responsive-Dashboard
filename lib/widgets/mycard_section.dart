@@ -15,7 +15,7 @@ class MycardSection extends StatelessWidget {
           padding: const EdgeInsets.only(left: 20.0, right: 20.0, top: 8.0),
           child: Text(
             "My Cards",
-            style: AppStyles.styleBold16.copyWith(color: Colors.black),
+            style: AppStyles.styleBold16(context).copyWith(color: Colors.black),
           ),
         ),
         SizedBox(height: 5),

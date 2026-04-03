@@ -29,10 +29,15 @@ class MyCard extends StatelessWidget {
             Padding(
               padding: const EdgeInsets.only(left: 12.0, top: 24),
               child: ListTile(
-                title: Text('Karim Mohamed', style: AppStyles.styleMedium20),
+                title: Text(
+                  'Karim Mohamed',
+                  style: AppStyles.styleMedium20(context),
+                ),
                 subtitle: Text(
                   'Card 1 ',
-                  style: AppStyles.styleBold16.copyWith(color: Colors.white),
+                  style: AppStyles.styleBold16(
+                    context,
+                  ).copyWith(color: Colors.white),
                 ),
                 trailing: SvgPicture.asset(Assets.imagesGallery),
               ),
@@ -48,13 +53,15 @@ class MyCard extends StatelessWidget {
                 children: [
                   Text(
                     '12345 6789 1234 5678',
-                    style: AppStyles.styleBold16.copyWith(color: Colors.white),
+                    style: AppStyles.styleBold16(
+                      context,
+                    ).copyWith(color: Colors.white),
                   ),
                   Text(
                     '6/27 - 361',
-                    style: AppStyles.styleMedium20.copyWith(
-                      color: Colors.white,
-                    ),
+                    style: AppStyles.styleMedium20(
+                      context,
+                    ).copyWith(color: Colors.white),
                   ),
                 ],
               ),

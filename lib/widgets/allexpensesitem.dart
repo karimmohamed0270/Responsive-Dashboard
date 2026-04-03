@@ -102,25 +102,25 @@ class Allexpensesitem extends StatelessWidget {
 
                 Text(
                   item.title,
-                  style: AppStyles.styleSemiBold16.copyWith(
-                    color: isSelected ? Colors.white : Colors.black,
-                  ),
+                  style: AppStyles.styleSemiBold16(
+                    context,
+                  ).copyWith(color: isSelected ? Colors.white : Colors.black),
                 ),
 
                 Text(
                   item.date,
-                  style: AppStyles.styleRegular16.copyWith(
-                    color: isSelected ? Colors.white : Colors.grey,
-                  ),
+                  style: AppStyles.styleRegular16(
+                    context,
+                  ).copyWith(color: isSelected ? Colors.white : Colors.grey),
                 ),
 
                 const SizedBox(height: 8),
 
                 Text(
                   item.price,
-                  style: AppStyles.styleBold16.copyWith(
-                    color: isSelected ? Colors.white : Colors.black,
-                  ),
+                  style: AppStyles.styleBold16(
+                    context,
+                  ).copyWith(color: isSelected ? Colors.white : Colors.black),
                 ),
               ],
             ),

@@ -1,5 +1,3 @@
-import 'dart:math';
-
 import 'package:flutter/material.dart';
 import 'package:responesive_dashboard/models/incomeDetails.dart';
 import 'package:responesive_dashboard/utils/app_style.dart';
@@ -22,11 +20,11 @@ class IncomeDetailsItem extends StatelessWidget {
       ),
       title: Text(
         incomeDetailsModel.title,
-        style: AppStyles.styleRegular12.copyWith(color: Colors.black),
+        style: AppStyles.styleRegular12(context).copyWith(color: Colors.black),
       ),
       trailing: Text(
         '\$${incomeDetailsModel.amount.toStringAsFixed(2)}',
-        style: AppStyles.styleRegular14.copyWith(color: Colors.black),
+        style: AppStyles.styleRegular14(context).copyWith(color: Colors.black),
       ),
     );
   }

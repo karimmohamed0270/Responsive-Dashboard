@@ -14,8 +14,11 @@ class UserInfoListtile extends StatelessWidget {
       color: const Color.fromARGB(255, 248, 238, 238),
       child: ListTile(
         leading: SvgPicture.asset(userinfo.profileImagePath),
-        title: Text(userinfo.name, style: AppStyles.styleSemiBold16),
-        subtitle: Text(userinfo.email, style: AppStyles.styleRegular12),
+        title: Text(userinfo.name, style: AppStyles.styleSemiBold16(context)),
+        subtitle: Text(
+          userinfo.email,
+          style: AppStyles.styleRegular12(context),
+        ),
       ),
     );
   }

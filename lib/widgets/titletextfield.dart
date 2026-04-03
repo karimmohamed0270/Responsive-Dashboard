@@ -17,7 +17,7 @@ class Titletextfield extends StatelessWidget {
       mainAxisAlignment: MainAxisAlignment.start,
       children: [
         //1 title
-        Text(textdata, style: AppStyles.styleSemiBold16),
+        Text(textdata, style: AppStyles.styleSemiBold16(context)),
         //2 textfield
         CustomTextField(hintText: hintText),
       ],

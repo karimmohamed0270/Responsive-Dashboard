@@ -12,7 +12,7 @@ class LastTransaction extends StatelessWidget {
     return Column(
       children: [
         // header
-        Text("Last Transaction", style: AppStyles.styleSemiBold16),
+        Text("Last Transaction", style: AppStyles.styleSemiBold16(context)),
         SizedBox(height: 10),
 
         // users
