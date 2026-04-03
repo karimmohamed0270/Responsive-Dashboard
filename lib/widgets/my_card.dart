@@ -66,8 +66,9 @@ class MyCard extends StatelessWidget {
                 ],
               ),
             ),
-
-            SizedBox(height: 20),
+            //  flexable because there are error in the bottom when the desktop screen become samll
+            // so i use flexible to  if there are height 20 take it if not not make size box this the importance of flexable
+            Flexible(child: SizedBox(height: 20)),
           ],
         ),
       ),

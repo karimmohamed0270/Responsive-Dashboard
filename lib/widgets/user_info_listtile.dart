@@ -14,10 +14,15 @@ class UserInfoListtile extends StatelessWidget {
       color: const Color.fromARGB(255, 248, 238, 238),
       child: ListTile(
         leading: SvgPicture.asset(userinfo.profileImagePath),
-        title: Text(userinfo.name, style: AppStyles.styleSemiBold16(context)),
-        subtitle: Text(
-          userinfo.email,
-          style: AppStyles.styleRegular12(context),
+        title: FittedBox(
+          alignment: Alignment.centerLeft,
+          fit: BoxFit.scaleDown,
+          child: Text(userinfo.name, style: AppStyles.styleSemiBold16(context)),
+        ),
+        subtitle: FittedBox(
+          alignment: Alignment.centerLeft,
+          fit: BoxFit.scaleDown,
+          child: Text(userinfo.email, style: AppStyles.styleRegular12(context)),
         ),
       ),
     );
