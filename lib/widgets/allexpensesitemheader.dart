@@ -17,20 +17,24 @@ class Allexpensesitemheader extends StatelessWidget {
     return Container(
       child: Row(
         children: [
-          CircleAvatar(
-            radius: 20,
-            backgroundColor: const Color.fromARGB(0, 255, 252, 252),
-            child: SvgPicture.asset(
-              item.image,
-              color: isSelected ? Colors.white : Colors.blue,
+          Flexible(
+            child: CircleAvatar(
+              radius: 20,
+              backgroundColor: const Color.fromARGB(0, 255, 252, 252),
+              child: SvgPicture.asset(
+                item.image,
+                color: isSelected ? Colors.white : Colors.blue,
+              ),
             ),
           ),
 
           Expanded(child: SizedBox()),
 
-          Icon(
-            Icons.arrow_back,
-            color: isSelected ? Colors.white : Colors.blue,
+          Flexible(
+            child: Icon(
+              Icons.arrow_back,
+              color: isSelected ? Colors.white : Colors.blue,
+            ),
           ),
         ],
       ),
