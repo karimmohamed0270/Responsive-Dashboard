@@ -1,16 +1,16 @@
 # responesive_dashboard
 
-A new Flutter project.
+Responsive Dashboard using Flutter
 
-## Getting Started
+Developed a fully responsive dashboard application using Flutter, designed to adapt seamlessly to all screen sizes including mobile, tablet, and desktop.
 
-This project is a starting point for a Flutter application.
+GitHub: https://github.com/karimmohamed0270/Responsive-Dashboard
 
-A few resources to get you started if this is your first Flutter project:
+Key Features:
+- Responsive layout for multiple screen sizes
+- Interactive charts and data visualization
+- Side navigation and dynamic content sections
+- Clean, modern, and user-friendly UI
 
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
-
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+# Demo
+https://drive.google.com/file/d/1jCuHGtYavqhnpVEsA0IXvnrGPY0HBV2g/view
